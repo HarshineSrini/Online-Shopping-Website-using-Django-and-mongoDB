@@ -1,0 +1,120 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{% static 'css/about.css' %}">
+</head>
+<body>
+    <heaader >
+        <section>
+            <div class="head">
+                <div class="logo">
+                    <img src="{% static 'assets/images/logo.jpg' %}" alt="">
+                </div>
+                <div class="title">
+                    <h1>TWRIL & TREND</h1>
+                </div>
+                <div class="search-bar">
+                    <input type="search" name="search" id="search" placeholder="Search......">
+                    <button type="submit">Search</button>
+                </div>
+                <div class="profile">
+                    <nav>
+                        <ul type="none" >
+                            <li><a href="{% url 'signup' %}">SIGN UP</a></li>
+                            <li><a href="{% url 'signin' %}">SIGN IN</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </section>
+         <section class="headertwo">
+        <div class="navbar">
+            <nav>
+                <ul type="none">
+                        <li><a href="{% url 'indexpage' %}">HOME</a></li>
+                        <li><a href="{% url 'aboutpage' %}">ABOUT</a></li>
+                        <li><a href="{% url 'womenspage' %}">WOMEN</a></li>
+                        <li><a href="{% url 'menspage' %}">MEN</a></li>
+                        <li><a href="{% url 'kidspage' %}">KIDS</a></li>
+                        <li><a href="{% url 'contactpage' %}">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="icons" style="margin-left:795px;">
+            <nav>
+                <ul>
+                    <li><a href="./addtocart.html"  style="text-decoration: none;"><i class="fa fa-shopping-cart"></i></a></li>
+                    <li><a href="{% url 'purchased_products' %}" style="font-size: 14px; text-decoration:none;font-weight:bold ; ">PURCHASED PRODUCTS</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+    </heaader>
+    <main>
+        <section>
+            <div class="about">
+                <h1>ABOUT US</h1>
+                <p>Welcome to Twril and Trend, where fashion meets passion and every outfit tells your unique story. We believe that style is more than just clothes — it’s an expression of your personality, confidence, and creativity. At Twril and Trend, we curate bold, beautiful, and trendsetting pieces that help you twirl with confidence and stand out in every crowd.
+
+Our team of fashion lovers is dedicated to bringing you the latest trends combined with timeless elegance. Whether you’re dressing for everyday moments or special occasions, Twril and Trend is your partner in style.</p>
+            </div>
+        </section>
+        <section>
+           <div class="grid-section">
+                <div class="container">
+                    <div class="cards">
+                        <h1>OUR STORY</h1>
+                        <p>Twril and Trend was born out of a desire to empower individuals through fashion. What started as a small idea grew into a vibrant community that celebrates self-expression and individuality. We believe fashion is for everyone, and we strive to create styles that inspire you to be your authentic self — wherever you go, whatever you do.</p>
+                    </div>                  
+                    <div class="cards">
+                        <img src="{% static 'assets/images/about4.jpg' %}" alt="">
+                    </div>
+                    <div class="cards">
+                        <img src="{% static 'assets/images/about6.jpg' %}" alt="">
+                    </div>
+                    <div class="cards">
+                         <h1>VISION AND MISSION</h1>
+                         <p><strong>Our Vision:</strong> To inspire confidence and creativity in every person through accessible, stylish, and sustainable fashion. <br>
+<strong>Our Mission: </strong>To empower individuals to express their unique identity by offering trend-forward, high-quality clothing and accessories that combine style, comfort, and sustainability.
+
+Together, we aim to create a world where fashion is inclusive, inspiring, and a true reflection of who you are.</p>
+                    </div>
+                    <div class="cards">
+                        <h1>WHAT WE OFFER</h1>
+                        <p>At Twril and Trend, you’ll find a curated selection of:</p>
+                            <ul> 
+                                <li> Trend-forward apparel for every occasion</li>
+                                <li> Statement accessories to complete your look</li>
+                                <li>  Seasonal collections that keep you ahead of the curve</li>
+                                <li>Style tips and inspiration to fuel your creativity</li>
+                                <li>We carefully select each piece to ensure quality, comfort, and timeless appeal.</li>
+                            </ul>       
+                    </div>
+                    <div class="cards">
+                         <img src="{% static 'assets/images/about7.jpg' %}" alt="">
+                    </div>
+                    <div class="cards">
+                        <img src="{% static 'assets/images/about8.jpg' %}" alt="">
+                    </div>
+                    <div class="cards">
+                         <h1>JOIN OUR COMMUNITY</h1>
+                         <p>More than just a brand, Twril and Trend is a vibrant community of fashion enthusiasts who love to share, inspire, and support each other. Follow us on social media, tag your looks with #TwrilAndTrend, and be part of a movement that celebrates diversity, confidence, and bold style.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section>
+            <div class="footer">
+                <p><a href="">@ 2025 , Twril and Trend</a></p>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>

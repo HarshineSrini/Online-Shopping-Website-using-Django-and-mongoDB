@@ -1,0 +1,1533 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+        padding:0;
+        margin: 0;
+        box-sizing: border-box;
+        height: 100vh;
+        width: 100%;
+        overflow-x: hidden;
+    }
+/* HEADER */
+    .head{
+        display: flex;
+        height: 130px;
+        width: 100%;
+        /* border-bottom: 1px solid black; */
+    }
+    .logo img{
+        height: 70px;
+        width: 70px;
+        margin: 30px;
+        border-radius: 15px;
+        /* border: 2px solid rgb(70, 130, 242); */
+        /* box-shadow: offset-x offset-y blur-radius spread-radius color; */
+        box-shadow: 2px 2px 10px goldenrod;
+    }
+    .title{
+        height: 70px;
+        width: 400px;
+        color: black;
+        /* text-shadow: offset-x offset-y blur-radius color; */
+        text-shadow: 2px 2px 2px goldenrod;
+        font-family:'Times New Roman', Times, serif;
+        font-size: 25px;
+        font-weight: bolder;
+        font-style:normal;
+        margin: 10px;
+    }
+    .search-bar{
+        margin: 40px 0px 0px 0px;
+
+    }
+    .search-bar input{
+        height: 45px;
+        width: 400px;
+        border-radius: 10px;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 15px;
+    }
+    .search-bar button{
+        height: 45px;
+        width: 100px;
+        border-radius: 10px;
+        background-color: black;
+        color: white;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 15px;
+    }
+   .search-bar button:hover{
+        color: rgb(253, 245, 245);
+        /* background-color: white; */
+        box-shadow: 5px 5px 12px goldenrod;
+        cursor: pointer;
+   }
+   .profile{
+    margin: 40px 0px 0px 150px;
+   }
+   .profile nav ul{
+    display: flex;
+    gap:10px;
+   
+   }
+   .profile  ul li a{
+    margin: 30px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:15px;
+    font-weight: bold;
+   }
+   .headertwo{
+    display: flex;
+    height: 30px;
+    width: 100%;
+   }  
+   .navbar nav ul{
+    display: flex;
+    gap:30px;
+   } 
+   .navbar nav ul li a{
+     color: rgb(1, 1, 1);
+     text-decoration: none;
+     font-family: 'Times New Roman', Times, serif;
+     font-weight: bold;
+     font-size: 15px;
+     /* height: 50px;
+     width: auto;
+     background-color: black;
+     border-radius: 10px;
+     padding: 5px; */
+   }
+   .navbar nav ul li a:hover{
+    color:rgb(230, 186, 98);
+    /* color: rgb(253, 245, 245); */
+    /* background-color: white; */
+    /* box-shadow: 5px 5px 10px goldenrod;
+    cursor: pointer; */
+   }
+   .icons{
+    margin-left:800px;
+   }
+   .icons nav ul{
+    display: flex;
+    gap:50px;
+    color: black;
+    list-style: none;
+    /* margin: 0px 0px 0px 100px; */
+   }
+   .icons nav ul li a {
+    color: black;
+    font-size:20px;
+   }
+   .icons nav ul li a i:hover{
+    /* color:rgb(230, 186, 98); */
+      color: rgb(0, 0, 0);
+        /* background-color: white; */
+        text-shadow: 5px 5px 10px goldenrod;
+        cursor: pointer;
+   }
+
+
+   .image{
+    background-image: url(../assets/images/kidsposter.jpg);
+    background-position: center;
+    /* background-image: url(kidspage.jpg); */
+    /* background-color: antiquewhite; */
+    width: 100%;
+    height: 450px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 30px;
+   }
+   .container{
+    display: flex;
+    height: auto;
+    width: 90%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 50px 0px;
+    /* border-bottom: 1px solid black; */
+   }
+   .container a{
+    height: 250px;
+    width: 250px;
+    /* margin: 20px; */
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container a div{
+     height: 150px; 
+    width: 150px;
+    border-radius: 50%;
+    /* background-color:bisque; */
+    box-shadow: 5px 5px 10px black;
+}  
+.container a div img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+.container a h3{
+    color: #000000;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: bold;
+}
+
+
+/* grid section */
+.grid-section{
+    display: grid;
+    grid-template-columns: 300px 2fr;
+    height: auto;
+    /* gap: 10px; */
+}
+.cards1{
+  position: sticky;
+  top: 0;
+  align-self: start;
+}
+
+
+.cards2{
+    border-left: 1px solid black;
+}
+.cards1 h1{
+    padding: 20px;
+}
+.cards1 nav ul{
+    list-style: none;
+}
+.cards1 nav ul li{
+    padding: 15px 0px 0px 5px;
+}
+.cards1 nav ul li a{
+    color: black;
+    text-decoration: none;
+}
+.cards2 h1{
+   padding: 20px;
+}
+
+/* fav icon */
+.favourite-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.favourite-icon.fav-active {
+    color: red;
+}
+
+
+/* boys tshirt section */
+    #boystshirts{
+    display: flex;
+    flex-wrap: wrap;
+    /* margin:10px 0px 0px 20px; */
+    justify-content: center;
+    align-items: center;
+}
+.boys-tshirts-collections {
+    height: auto; /* Let the height be dynamic */
+    min-height: 450px; /* Ensure consistent card height */
+    width: 250px;
+    background-color: white;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Spread content evenly */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.boys-tshirts-collections img {
+    height: 140px;
+    width: 120px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.boys-tshirts-collections h3 {
+    margin: 10px 0 5px 0;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 16px;
+    min-height: 40px;
+}
+
+.boys-tshirts-collections p.description {
+    text-align: left;
+    line-height: 18px;
+    word-spacing: 3px;
+    padding: 0 5px;
+    width: 100%;
+    font-size: 14px;
+    min-height: 50px; /* Ensures consistent description space */
+}
+
+.price-row {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 0 5px;
+    margin: 8px 0;
+}
+
+.price-row .label {
+    font-weight: bold;
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: gray;
+    font-size: 14px;
+}
+
+.discounted-price {
+    color: green;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.size-qty-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 0 5px;
+    margin-bottom: 10px;
+}
+
+.size-container,
+.qty-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+}
+
+.size-container label,
+.qty-container label {
+    font-weight: bold;
+}
+
+.size-container select,
+.qty-container input {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 70px;
+}
+
+.boys-tshirts-collections button {
+    height: 30px;
+    width: 130px;
+    border-radius: 15px;
+    border: none;
+    background-color: bisque;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-top: auto; /* Pushes button to the bottom */
+    cursor: pointer;
+}
+
+.boys-tshirts-collections button:hover {
+    background-color: gray;
+    color: white;
+}
+
+
+
+
+/* boys ethnic wear section */
+    #boysethnicwear{
+    display: flex;
+    flex-wrap: wrap;
+    /* margin:10px 0px 0px 20px; */
+    justify-content: center;
+    align-items: center;
+}
+.boys-ethnicwear-collections {
+    height: auto; /* Let the height be dynamic */
+    min-height: 450px; /* Ensure consistent card height */
+    width: 250px;
+    background-color: white;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Spread content evenly */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.boys-ethnicwear-collections img {
+    height: 140px;
+    width: 120px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.boys-ethnicwear-collections h3 {
+    margin: 10px 0 5px 0;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 16px;
+    min-height: 40px;
+}
+
+.boys-ethnicwear-collections p.description {
+    text-align: left;
+    line-height: 18px;
+    word-spacing: 3px;
+    padding: 0 5px;
+    width: 100%;
+    font-size: 14px;
+    min-height: 50px; /* Ensures consistent description space */
+}
+
+.price-row {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 0 5px;
+    margin: 8px 0;
+}
+
+.price-row .label {
+    font-weight: bold;
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: gray;
+    font-size: 14px;
+}
+
+.discounted-price {
+    color: green;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.size-qty-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 0 5px;
+    margin-bottom: 10px;
+}
+
+.size-container,
+.qty-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+}
+
+.size-container label,
+.qty-container label {
+    font-weight: bold;
+}
+
+.size-container select,
+.qty-container input {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 70px;
+}
+
+.boys-ethnicwear-collections button {
+    height: 30px;
+    width: 130px;
+    border-radius: 15px;
+    border: none;
+    background-color: bisque;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-top: auto; /* Pushes button to the bottom */
+    cursor: pointer;
+}
+
+.boys-ethnicwear-collections button:hover {
+    background-color: gray;
+    color: white;
+}
+
+/* boys shirts section */
+
+    #boysshirts{
+    display: flex;
+    flex-wrap: wrap;
+    /* margin:10px 0px 0px 20px; */
+    justify-content: center;
+    align-items: center;
+}
+.boys-shirts-collections {
+    height: auto; /* Let the height be dynamic */
+    min-height: 450px; /* Ensure consistent card height */
+    width: 250px;
+    background-color: white;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Spread content evenly */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.boys-shirts-collections img {
+    height: 140px;
+    width: 120px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.boys-shirts-collections h3 {
+    margin: 10px 0 5px 0;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 16px;
+    min-height: 40px;
+}
+
+.boys-shirts-collections p.description {
+    text-align: left;
+    line-height: 18px;
+    word-spacing: 3px;
+    padding: 0 5px;
+    width: 100%;
+    font-size: 14px;
+    min-height: 50px; /* Ensures consistent description space */
+}
+
+.price-row {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 0 5px;
+    margin: 8px 0;
+}
+
+.price-row .label {
+    font-weight: bold;
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: gray;
+    font-size: 14px;
+}
+
+.discounted-price {
+    color: green;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.size-qty-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 0 5px;
+    margin-bottom: 10px;
+}
+
+.size-container,
+.qty-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+}
+
+.size-container label,
+.qty-container label {
+    font-weight: bold;
+}
+
+.size-container select,
+.qty-container input {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 70px;
+}
+
+.boys-shirts-collections button {
+    height: 30px;
+    width: 130px;
+    border-radius: 15px;
+    border: none;
+    background-color: bisque;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-top: auto; /* Pushes button to the bottom */
+    cursor: pointer;
+}
+
+.boys-shirts-collections button:hover {
+    background-color: gray;
+    color: white;
+}
+
+/* boys shorts section */
+
+    #boysshorts{
+    display: flex;
+    flex-wrap: wrap;
+    /* margin:10px 0px 0px 20px; */
+    justify-content: center;
+    align-items: center;
+}
+.boys-shorts-collections {
+    height: auto; /* Let the height be dynamic */
+    min-height: 450px; /* Ensure consistent card height */
+    width: 250px;
+    background-color: white;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Spread content evenly */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.boys-shorts-collections img {
+    height: 140px;
+    width: 120px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.boys-shorts-collections h3 {
+    margin: 10px 0 5px 0;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 16px;
+    min-height: 40px;
+}
+
+.boys-shorts-collections p.description {
+    text-align: left;
+    line-height: 18px;
+    word-spacing: 3px;
+    padding: 0 5px;
+    width: 100%;
+    font-size: 14px;
+    min-height: 50px; /* Ensures consistent description space */
+}
+
+.price-row {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 0 5px;
+    margin: 8px 0;
+}
+
+.price-row .label {
+    font-weight: bold;
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: gray;
+    font-size: 14px;
+}
+
+.discounted-price {
+    color: green;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.size-qty-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 0 5px;
+    margin-bottom: 10px;
+}
+
+.size-container,
+.qty-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+}
+
+.size-container label,
+.qty-container label {
+    font-weight: bold;
+}
+
+.size-container select,
+.qty-container input {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 70px;
+}
+
+.boys-shorts-collections button {
+    height: 30px;
+    width: 130px;
+    border-radius: 15px;
+    border: none;
+    background-color: bisque;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-top: auto; /* Pushes button to the bottom */
+    cursor: pointer;
+}
+
+.boys-shorts-collections button:hover {
+    background-color: gray;
+    color: white;
+}
+
+/* boys night dress collections */
+
+  #boysnightdress{
+    display: flex;
+    flex-wrap: wrap;
+    /* margin:10px 0px 0px 20px; */
+    justify-content: center;
+    align-items: center;
+}
+.boys-night-collections {
+    height: auto; /* Let the height be dynamic */
+    min-height: 450px; /* Ensure consistent card height */
+    width: 250px;
+    background-color: white;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Spread content evenly */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.boys-night-collections img {
+    height: 140px;
+    width: 120px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.boys-night-collections h3 {
+    margin: 10px 0 5px 0;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 16px;
+    min-height: 40px;
+}
+
+.boys-night-collections p.description {
+    text-align: left;
+    line-height: 18px;
+    word-spacing: 3px;
+    padding: 0 5px;
+    width: 100%;
+    font-size: 14px;
+    min-height: 50px; /* Ensures consistent description space */
+}
+
+.price-row {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 0 5px;
+    margin: 8px 0;
+}
+
+.price-row .label {
+    font-weight: bold;
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: gray;
+    font-size: 14px;
+}
+
+.discounted-price {
+    color: green;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.size-qty-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 0 5px;
+    margin-bottom: 10px;
+}
+
+.size-container,
+.qty-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+}
+
+.size-container label,
+.qty-container label {
+    font-weight: bold;
+}
+
+.size-container select,
+.qty-container input {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 70px;
+}
+
+.boys-night-collections button {
+    height: 30px;
+    width: 130px;
+    border-radius: 15px;
+    border: none;
+    background-color: bisque;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-top: auto; /* Pushes button to the bottom */
+    cursor: pointer;
+}
+
+.boys-night-collections button:hover {
+    background-color: gray;
+    color: white;
+}
+
+/* girls tshirt collection */
+
+    #girlstshirts{
+    display: flex;
+    flex-wrap: wrap;
+    /* margin:10px 0px 0px 20px; */
+    justify-content: center;
+    align-items: center;
+}
+.girls-tshirt-collections {
+    height: auto; /* Let the height be dynamic */
+    min-height: 450px; /* Ensure consistent card height */
+    width: 250px;
+    background-color: white;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Spread content evenly */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.girls-tshirt-collections img {
+    height: 140px;
+    width: 120px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.girls-tshirt-collections h3 {
+    margin: 10px 0 5px 0;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 16px;
+    min-height: 40px;
+}
+
+.girls-tshirt-collections p.description {
+    text-align: left;
+    line-height: 18px;
+    word-spacing: 3px;
+    padding: 0 5px;
+    width: 100%;
+    font-size: 14px;
+    min-height: 50px; /* Ensures consistent description space */
+}
+
+.price-row {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 0 5px;
+    margin: 8px 0;
+}
+
+.price-row .label {
+    font-weight: bold;
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: gray;
+    font-size: 14px;
+}
+
+.discounted-price {
+    color: green;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.size-qty-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 0 5px;
+    margin-bottom: 10px;
+}
+
+.size-container,
+.qty-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+}
+
+.size-container label,
+.qty-container label {
+    font-weight: bold;
+}
+
+.size-container select,
+.qty-container input {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 70px;
+}
+
+.girls-tshirt-collections button {
+    height: 30px;
+    width: 130px;
+    border-radius: 15px;
+    border: none;
+    background-color: bisque;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-top: auto; /* Pushes button to the bottom */
+    cursor: pointer;
+}
+
+.girls-tshirt-collections button:hover {
+    background-color: gray;
+    color: white;
+}
+
+/* girls ethnic section */
+
+ #girlsethnicwear{
+    display: flex;
+    flex-wrap: wrap;
+    /* margin:10px 0px 0px 20px; */
+    justify-content: center;
+    align-items: center;
+}
+.girls-ethnic-collections {
+    height: auto; /* Let the height be dynamic */
+    min-height: 450px; /* Ensure consistent card height */
+    width: 250px;
+    background-color: white;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Spread content evenly */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.girls-ethnic-collections img {
+    height: 140px;
+    width: 120px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.girls-ethnic-collections h3 {
+    margin: 10px 0 5px 0;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 16px;
+    min-height: 40px;
+}
+
+.girls-ethnic-collections p.description {
+    text-align: left;
+    line-height: 18px;
+    word-spacing: 3px;
+    padding: 0 5px;
+    width: 100%;
+    font-size: 14px;
+    min-height: 50px; /* Ensures consistent description space */
+}
+
+.price-row {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 0 5px;
+    margin: 8px 0;
+}
+
+.price-row .label {
+    font-weight: bold;
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: gray;
+    font-size: 14px;
+}
+
+.discounted-price {
+    color: green;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.size-qty-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 0 5px;
+    margin-bottom: 10px;
+}
+
+.size-container,
+.qty-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+}
+
+.size-container label,
+.qty-container label {
+    font-weight: bold;
+}
+
+.size-container select,
+.qty-container input {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 70px;
+}
+
+.girls-ethnic-collections button {
+    height: 30px;
+    width: 130px;
+    border-radius: 15px;
+    border: none;
+    background-color: bisque;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-top: auto; /* Pushes button to the bottom */
+    cursor: pointer;
+}
+
+.girls-ethnic-collections button:hover {
+    background-color: gray;
+    color: white;
+}
+
+
+/* girls skirt section */
+
+#girlsskirts{
+    display: flex;
+    flex-wrap: wrap;
+    /* margin:10px 0px 0px 20px; */
+    justify-content: center;
+    align-items: center;
+}
+.girls-skirt-collections {
+    height: auto; /* Let the height be dynamic */
+    min-height: 450px; /* Ensure consistent card height */
+    width: 250px;
+    background-color: white;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Spread content evenly */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.girls-skirt-collections img {
+    height: 140px;
+    width: 120px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.girls-skirt-collections h3 {
+    margin: 10px 0 5px 0;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 16px;
+    min-height: 40px;
+}
+
+.girls-skirt-collections p.description {
+    text-align: left;
+    line-height: 18px;
+    word-spacing: 3px;
+    padding: 0 5px;
+    width: 100%;
+    font-size: 14px;
+    min-height: 50px; /* Ensures consistent description space */
+}
+
+.price-row {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 0 5px;
+    margin: 8px 0;
+}
+
+.price-row .label {
+    font-weight: bold;
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: gray;
+    font-size: 14px;
+}
+
+.discounted-price {
+    color: green;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.size-qty-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 0 5px;
+    margin-bottom: 10px;
+}
+
+.size-container,
+.qty-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+}
+
+.size-container label,
+.qty-container label {
+    font-weight: bold;
+}
+
+.size-container select,
+.qty-container input {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 70px;
+}
+
+.girls-skirt-collections button {
+    height: 30px;
+    width: 130px;
+    border-radius: 15px;
+    border: none;
+    background-color: bisque;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-top: auto; /* Pushes button to the bottom */
+    cursor: pointer;
+}
+
+.girls-skirt-collections button:hover {
+    background-color: gray;
+    color: white;
+}
+
+
+/* girls dresses section */
+
+  #girlsdresses{
+    display: flex;
+    flex-wrap: wrap;
+    /* margin:10px 0px 0px 20px; */
+    justify-content: center;
+    align-items: center;
+}
+.girls-dress-collections {
+    height: auto; /* Let the height be dynamic */
+    min-height: 450px; /* Ensure consistent card height */
+    width: 250px;
+    background-color: white;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Spread content evenly */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.girls-dress-collections img {
+    height: 140px;
+    width: 120px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.girls-dress-collections h3 {
+    margin: 10px 0 5px 0;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 16px;
+    min-height: 40px;
+}
+
+.girls-dress-collections p.description {
+    text-align: left;
+    line-height: 18px;
+    word-spacing: 3px;
+    padding: 0 5px;
+    width: 100%;
+    font-size: 14px;
+    min-height: 50px; /* Ensures consistent description space */
+}
+
+.price-row {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 0 5px;
+    margin: 8px 0;
+}
+
+.price-row .label {
+    font-weight: bold;
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: gray;
+    font-size: 14px;
+}
+
+.discounted-price {
+    color: green;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.size-qty-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 0 5px;
+    margin-bottom: 10px;
+}
+
+.size-container,
+.qty-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+}
+
+.size-container label,
+.qty-container label {
+    font-weight: bold;
+}
+
+.size-container select,
+.qty-container input {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 70px;
+}
+
+.girls-dress-collections button {
+    height: 30px;
+    width: 130px;
+    border-radius: 15px;
+    border: none;
+    background-color: bisque;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-top: auto; /* Pushes button to the bottom */
+    cursor: pointer;
+}
+
+.girls-dress-collections button:hover {
+    background-color: gray;
+    color: white;
+}
+
+/* girls night dress collection */
+
+
+    #girlsnightdress{
+    display: flex;
+    flex-wrap: wrap;
+    /* margin:10px 0px 0px 20px; */
+    justify-content: center;
+    align-items: center;
+}
+.girls-nightdress-collections {
+    height: auto; /* Let the height be dynamic */
+    min-height: 450px; /* Ensure consistent card height */
+    width: 250px;
+    background-color: white;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Spread content evenly */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.girls-nightdress-collections img {
+    height: 140px;
+    width: 120px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.girls-nightdress-collections h3 {
+    margin: 10px 0 5px 0;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 16px;
+    min-height: 40px;
+}
+
+.girls-nightdress-collections p.description {
+    text-align: left;
+    line-height: 18px;
+    word-spacing: 3px;
+    padding: 0 5px;
+    width: 100%;
+    font-size: 14px;
+    min-height: 50px; /* Ensures consistent description space */
+}
+
+.price-row {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 0 5px;
+    margin: 8px 0;
+}
+
+.price-row .label {
+    font-weight: bold;
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: gray;
+    font-size: 14px;
+}
+
+.discounted-price {
+    color: green;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.size-qty-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 0 5px;
+    margin-bottom: 10px;
+}
+
+.size-container,
+.qty-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+}
+
+.size-container label,
+.qty-container label {
+    font-weight: bold;
+}
+
+.size-container select,
+.qty-container input {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 70px;
+}
+
+.girls-nightdress-collections button {
+    height: 30px;
+    width: 130px;
+    border-radius: 15px;
+    border: none;
+    background-color: bisque;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-top: auto; /* Pushes button to the bottom */
+    cursor: pointer;
+}
+
+.girls-nightdress-collections button:hover {
+    background-color: gray;
+    color: white;
+}
+
+/* footer */
+    .footer {
+      /* background-color: burlywood; */
+      color: #000000;
+      text-align: center;
+      padding: 20px 0;
+      position: static;
+     margin-top: 20px;
+    }
+
+    .footer a {
+      color: #000000;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 20px;
+    }

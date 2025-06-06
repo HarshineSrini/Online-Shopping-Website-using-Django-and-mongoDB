@@ -1,0 +1,108 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <i class="fa-solid fa-magnifying-glass" ></i> -->
+     <link rel="stylesheet" href="{% static 'css/index.css' %}">
+</head>
+<body>
+    <header >
+        <section>
+            <div class="head">
+                <div class="logo">
+                    <img src="{% static 'assets/images/logo.jpg' %}" alt="">
+                </div>
+                <div class="title">
+                    <h1>TWRIL & TREND</h1>
+                </div>
+                <div class="search-bar">
+                    <input type="search" name="search" id="search" placeholder="Search......">
+                    <button type="submit">Search</button>
+                </div>
+                <div class="profile">
+                    <nav>
+                        <ul type="none" >
+                            <li><a href="{% url 'signup' %}">SIGN UP</a></li>
+                            <li><a href="{% url 'signin' %}">SIGN IN</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </section>
+         <section class="headertwo">
+        <div class="navbar">
+            <nav>
+                <ul type="none">
+                        <li><a href="{% url 'indexpage' %}">HOME</a></li>
+                        <li><a href="{% url 'aboutpage' %}">ABOUT</a></li>
+                        <li><a href="{% url 'womenspage' %}">WOMEN</a></li>
+                        <li><a href="{% url 'menspage' %}">MEN</a></li>
+                        <li><a href="{% url 'kidspage' %}">KIDS</a></li>
+                        <li><a href="{% url 'contactpage' %}">CONTACT</a></li>
+                        
+                </ul>
+            </nav>
+        </div>
+        <div class="icons" style="margin-left:750px;">
+            <nav>
+                <ul>
+                    <li><a href="{% url 'addtocart' %}"  style="text-decoration: none;"><i class="fa fa-shopping-cart"></i></a></li>
+                    <li><a href="{% url 'purchased_products' %}" style="font-size: 14px; text-decoration:none;font-weight:bold ; ">PURCHASED PRODUCTS</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+    </header>
+    <!-- Slider -->
+    <section>
+        <div class="slider">
+            <div class="slides">
+                <!-- <video src="TWRIL & TREND.mp4"></video> -->
+                <img src="{% static 'assets/images/img1.jpg' %}" alt="Slide 1">
+                <img src="{% static 'assets/images/img2.jpg' %}" alt="Slide 2">
+                <img src="{% static 'assets/images/img3.jpg' %}" alt="Slide 3">
+                <img src="{% static 'assets/images/img4.jpg' %}" alt="Slide 4">
+                <img src="{% static 'assets/images/img5.jpg' %}" alt="Slide 5">
+            </div>
+        <!-- <button class="slide_btn">Click Me</button> -->
+    </div>
+    </section>
+    <!-- card -->
+    <section>
+        <div class="content">
+
+            <div class="card" >
+                <div class="card-content">
+                    <a href="/Index/kidspage/"><img src="{% static 'assets/images/kids.jpg' %}" alt=""></a>
+                    <h1>STYLES FOR KIDS</h1>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <a href="/Index/womenspage/"><img src="{% static 'assets/images/Women.jpg' %}" alt=""></a>
+                    <h1>STYLES FOR WOMEN</h1>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <a href="/Index/menspage/"><img src="{% static 'assets/images/men.jpg' %}" alt=""></a>
+                    <h1>STYLES FOR MEN</h1>
+                </div>
+            </div>
+
+        </div>
+    </section>
+        <footer>
+        <section>
+            <div class="footer">
+                <p><a href="">@ 2025 , Twril and Trend</a></p>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,124 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{% static 'css/contact.css' %}">
+   
+</head>
+<body>
+    <heaader >
+        <section>
+            <div class="head">
+                <div class="logo">
+                    <img src="{% static 'assets/images/logo.jpg' %}" alt="">
+                </div>
+                <div class="title">
+                    <h1>TWRIL & TREND</h1>
+                </div>
+                <div class="search-bar">
+                    <input type="search" name="search" id="search" placeholder="Search......">
+                    <button type="submit">Search</button>
+                </div>
+                <div class="profile">
+                    <nav>
+                        <ul type="none" >
+                            <li><a href="{% url 'signup' %}">SIGN UP</a></li>
+                            <li><a href="{% url 'signin' %}">SIGN IN</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </section>
+         <section class="headertwo">
+        <div class="navbar">
+            <nav>
+                <ul type="none">
+                        <li><a href="{% url 'indexpage' %}">HOME</a></li>
+                        <li><a href="{% url 'aboutpage' %}">ABOUT</a></li>
+                        <li><a href="{% url 'womenspage' %}">WOMEN</a></li>
+                        <li><a href="{% url 'menspage' %}">MEN</a></li>
+                        <li><a href="{% url 'kidspage' %}">KIDS</a></li>
+                        <li><a href="{% url 'contactpage' %}">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="icons" style="margin-left:750px;">
+            <nav>
+                <ul>
+                    <li><a href="{% url 'addtocart' %}"  style="text-decoration: none;"><i class="fa fa-shopping-cart"></i></a></li>
+                    <li><a href="{% url 'purchased_products' %}" style="font-size: 14px; text-decoration:none;font-weight:bold ; ">PURCHASED PRODUCTS</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+    </heaader>
+    <main>
+        <section>
+            <div class="cont">
+                <h1>CONTACT  US</h1>
+            </div>
+        </section>
+        <section>
+            {% if message %}
+                <p style="color: rgb(0, 0, 0); font-weight: bold; margin: 10px 0; text-align: center;" >{{ message }}</p>
+            {% endif %}
+
+           <div class="parent">
+            <div class="child">
+                <div class="bigbox b">
+                    <h2>Get In Touch</h2>
+
+                    <form action="#" method="post">
+                        {% csrf_token %}
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="Enter subject" required>
+
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Write your message here..." rows="5" required></textarea>
+
+                        <button type="submit" value="submit" name="contactus">Send Now</button>
+                    </form>
+                    
+                </div>
+                <div class="smallbox1 s1">
+                    <a href=""><i class="fa-solid fa-phone"></i></a>
+                    <h5>+91 89523 28524</h5>
+                </div>
+                <div class="smallbox2 s2">
+                    <a href=""><i class="fa-brands fa-square-whatsapp"></i></a>
+                    <h5>+91 75862 23456</h5>
+                </div>
+                <div class="smallbox3 s3">
+                    <a href=""><i class="fa-solid fa-envelope"></i></a>
+                    <h5>twriland trend@gmail.com</h5>
+                </div>
+                <div class="smallbox4 s4">
+                    <a href=""><i class="fa-solid fa-shop"></i></a>
+                    <h5>No.72/65,Sonu Plaza ,Woraiyur,Trichy-620003</h5>
+                </div>
+                <div class="mediumbox m">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15674.982009592506!2d78.66960395015731!3d10.830777829139327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baaf5bd457044ff%3A0x654cd608dde1813!2sWoraiyur%2C%20Tiruchirappalli%2C%20Tamil%20Nadu%20620003!5e0!3m2!1sen!2sin!4v1747324111700!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+    </div>
+        </section>
+    </main>
+        <footer>
+        <section>
+            <div class="footer">
+                <p><a href="">@ 2025 , Twril and Trend</a></p>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>

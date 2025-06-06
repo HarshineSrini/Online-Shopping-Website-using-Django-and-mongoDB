@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/signin.css' %}">
+</head>
+<body>
+    <div class="signin">
+        <h1>SIGN IN</h1>
+        <form action="" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <label for="uname">Username</label>
+            <input type="text" name="uname" required>
+
+            <label for="pass">Password</label>
+            <input type="password" name="pass" required>
+
+            <input type="submit" name="btn" value="signin">
+        </form>
+        {% if error %}
+            <p class="error">{{ error }}</p>
+        {% endif %}
+    </div>
+</body>
+</html>
